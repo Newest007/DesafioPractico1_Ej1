@@ -1,0 +1,16 @@
+.Mostrar-padre{
+    display: flex;
+    text-align: center;
+    margin-left: 60px;
+    line-height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrar-hijo{
+    margin-top: 15px;
+    background-color: azure;
+    height: 400px;
+    width: 450px;
+    border-radius: 15px;
+}

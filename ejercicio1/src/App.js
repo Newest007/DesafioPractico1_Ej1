@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import Input from './components/Input';
 import Inputmes from './components/Input-meses';
+import Mostrar from './components/Mostrar';
 import Select from './components/Select';
 import './App.css';
 
@@ -21,8 +22,11 @@ function App() {
         />
         <p>Ingrese la cantidad de meses a pagar</p>
         <Inputmes />
+
       </div>
-     
+      <div>
+        <Mostrar></Mostrar>
+      </div>
     </div>
   );
 }
