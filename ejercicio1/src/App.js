@@ -10,12 +10,10 @@ function App() {
       
       <div className='principal'>
       <p className='titulo'>Bienvenido A La Academia UDB</p>
-        <p>Ingrese su nombre</p>
+        <p>Ingrese su Nombre</p>
         <Input />
         <p>Ingrese su Apellido</p>
-        <Input />
-        <p>Ingrese su nombre</p>
-        <Input />
+        <Input />        
         <p>Seleccione el tipo de curso a tomar</p>
         <Select 
         idioma1='ingles'
