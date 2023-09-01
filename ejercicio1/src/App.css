@@ -1,15 +1,29 @@
 *{
   padding: 0;
   margin: 0;
+  
+}
+html{
+  background-color: rgba(219, 219, 219, 0.918);
 }
 .App {
-  
+  display: flex;
   text-align: center;
-  background-color: azure;
-  height: 450px;
-  width: 500px;
   margin-left: 60px;
   line-height: 35px;
   justify-content: center;
   align-items: center;
+
+}
+
+.principal{
+  margin-top: 15px;
+  background-color: azure;
+  height: 400px;
+  width: 450px;
+  border-radius: 15px;
+}
+
+.titulo{
+  font-weight: bold;
 }

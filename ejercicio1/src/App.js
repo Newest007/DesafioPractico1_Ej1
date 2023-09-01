@@ -7,7 +7,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      
       <div className='principal'>
+      <p className='titulo'>Bienvenido A La Academia UDB</p>
         <p>Ingrese su nombre</p>
         <Input />
         <p>Ingrese su Apellido</p>
