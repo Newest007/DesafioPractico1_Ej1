@@ -1,23 +1,41 @@
 import React,{useState} from "react";
+import {evaluate} from "mathjs";
 
 function Registro(){
 
-    const [datos, setDatos] = useState(null);
+    const [descuento, setDescuento] = useState(null);
+    const [inputDato, setInputDato] = useState('');
 
-    const registrarDatos = () => {
-        const datosGuardados = datos;
+    const calcularDescuento = () => {
+
+        const valor = 25*0.1;
+        
+        if(!inputDato){
+            alert ('El valor no puede estar vacio');
+        }
+        else{
+            if(inputDato == 1){
+                descuento = 0;
+            }
+            if(2<=inputDato<=3 ){
+                descuento = 25*0.1 - inputDato;
+            }
+            
+        }
+
+        
     }
 
     const handleInputChange = (event) => {
-        setDatos(event.target.value);
+        setInputDato(event.target.value);
     }
     
     return(
         <>
             <div>
-                <input type="text" value={datos} onChange={handleInputChange}></input>
-                <button onClick={registrarDatos}>Guardar Datos</button>
-                <p>Datos Guardados: {datos} </p>
+                <input type="text" name="mese" onChange={handleInputChange} ></input>
+                <button onClick={calcularDescuento}>Calcular Descuento</button>
+                <p>Descuento Total: {descuento} </p>
                 
             </div>
         </>

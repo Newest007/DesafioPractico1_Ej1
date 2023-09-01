@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import Input from './components/Input';
 import Inputmes from './components/Input-meses';
-import Mostrar from './components/Mostrar';
 import Select from './components/Select';
 import Registro from './components/Registro';
 import './App.css';
@@ -26,7 +25,7 @@ function App() {
 
       </div>
       <div>
-        <Mostrar></Mostrar>
+        <Registro/>
       </div>
     </div>
   );
