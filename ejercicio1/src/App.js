@@ -25,8 +25,10 @@ function App() {
         <Inputmes />
 
       </div>
-      <div>
-        <Mostrar></Mostrar>
+      <div className='mostrar'>
+        <Mostrar>
+                  
+        </Mostrar>
       </div>
     </div>
   );
